@@ -4,7 +4,7 @@ Plugin Name: Google Ajax Search
 Plugin URI: http://dancameron.org/wordpress
 Description: Adds a Google AJAX Search box on your site. Example found <a href="http://dancameron.org">here</a>. Options include searching your site through Google Blog Search and/or straight up Google, a second search option is available that is perfect for flickr. Widgetized for your pleasure. MAKE SURE TO <a href="options-general.php?page=Google-AJAX-Search.php">CONFIGURE</a> your options and enter your API key.
 Author: http://dancameron.org
-Version: 1.1.1
+Version: 1.2
 Author URI: http://dancameron.org
 
 Installation:
@@ -24,6 +24,10 @@ Notes:
 	
 
 Version history:
+- 1.003
+Major Theme Fix
+	props to http://mr-foto.net/
+
 - 1.003
 Firefox flow
 
@@ -417,16 +421,16 @@ function widget_gajaxsearch_init() {
 		// These lines generate our output. Widgets can be very complex
 		// but as you can see here, they can also be very, very simple.
 		echo $before_widget . $before_title . $title . $after_title;
-		echo $after_widget;
-		?>
-				<div id="searchcontrol" width="100%">
-					<form method="get" action="http://blogsearch.google.com/blogsearch">
-					<input name="as_q" size="16" maxlength="255" value="" type="text">
-					<input name="sa" value="Search" type="submit">
-					<input name="bl_url" value="<?php echo get_option('home'); ?>" type="hidden">
-					</form>
-				</div>
-		<?php }  // end widget_gajaxsearch($args)
+        ?>
+                <div id="searchcontrol" width="100%">
+                    <form method="get" action="http://blogsearch.google.com/blogsearch ">
+                    <input name="as_q" size="16" maxlength="255" value="" type="text">
+                    <input name="sa" value="Search" type="submit">
+                    <input name="bl_url" value="<?php echo get_option('home'); ?>" type="hidden">
+                    </form>
+                </div>
+        <?php
+        echo $after_widget;}  // end widget_gajaxsearch($args)
 			
 
 	
