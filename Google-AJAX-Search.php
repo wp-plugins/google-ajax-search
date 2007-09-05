@@ -5,6 +5,7 @@ Plugin URI: http://dancameron.org/wordpress
 Description: Adds a Google AJAX Search box on your site. Example found <a href="http://dancameron.org">here</a>. Options include searching your site through Google Blog Search and/or straight up Google, a second search option is available that is perfect for flickr. Widgetized for your pleasure. MAKE SURE TO <a href="options-general.php?page=Google-AJAX-Search.php">CONFIGURE</a> your options and enter your API key.
 Author: http://dancameron.org
 Version: 1.2
+Stable tag: 1.2
 Author URI: http://dancameron.org
 
 Installation:
